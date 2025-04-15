@@ -33,7 +33,7 @@ variable "ami_id" {
   default     = "ami-0655cec52acf2717b" # Ubuntu 22.04 AMD64
 }
 
-variable "vpc_ic" {
+variable "vpc_id" {
   description = "VPC"
   type        = string
 }

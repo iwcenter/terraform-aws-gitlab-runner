@@ -2,7 +2,7 @@
 resource "aws_security_group" "gitlab_runner" {
   name        = "gitlab-runner-sg"
   description = "Security group for GitLab Runner"
-  vpc_id      = "${var.vpc_ic}"
+  vpc_id      = "${var.vpc_id}"
 
   # SSH access
   ingress {
