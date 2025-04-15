@@ -42,14 +42,3 @@ variable "subnet_ids" {
   description = "Subnets"
   type        = list(string)
 }
-
-variable "oidc_role_attach_policies" {
-  description = "Policies to attach to role"
-  type        = list(string)
-  default     = []
-}
-
-variable "project_paths" {
-  description = "Projects that authenticate to AWS"
-  type        = list(string)
-}
