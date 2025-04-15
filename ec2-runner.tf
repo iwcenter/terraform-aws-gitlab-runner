@@ -83,7 +83,7 @@ resource "aws_autoscaling_group" "gitlab_runner" {
   desired_capacity    = 1
   min_size            = 1
   max_size            = 1
-  vpc_zone_identifier = "${var.subnets}"
+  vpc_zone_identifier = var.subnet_ids
 
   launch_template {
     id      = aws_launch_template.gitlab_runner.id

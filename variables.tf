@@ -38,7 +38,7 @@ variable "vpc_ic" {
   type        = string
 }
 
-variable "subnets" {
+variable "subnet_ids" {
   description = "Subnets"
   type        = list(string)
 }
