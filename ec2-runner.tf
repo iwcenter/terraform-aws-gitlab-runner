@@ -34,7 +34,7 @@ resource "aws_launch_template" "gitlab_runner" {
   key_name      = var.ssh_key_name
 
   network_interfaces {
-    associate_public_ip_address = true
+    associate_public_ip_address = false
     security_groups             = [aws_security_group.gitlab_runner.id]
   }
 
